@@ -1,0 +1,25 @@
+Description: Remove unnecessary glib link
+Author: Joseph Bisch <joseph.bisch@gmail.com>
+Origin: vendor
+Bug: https://github.com/namecoin/namecoin/issues/169
+Last-Update: 2014-12-17
+Index: namecoin-0.3.76/src/Makefile
+===================================================================
+--- namecoin-0.3.76.orig/src/Makefile
++++ namecoin-0.3.76/src/Makefile
+@@ -45,7 +45,6 @@ namecoin: USE_UPNP:=1
+ 		# Linux-specific
+ 		LIBS+= \
+ 			-Wl,-Bdynamic \
+-			-l gthread-2.0 \
+ 			-l z \
+ 			-l dl \
+ 			-l pthread
+@@ -64,7 +63,6 @@ namecoind: USE_UPNP:=0
+ 		# Linux-specific
+ 		LIBS+= \
+ 			-Wl,-Bdynamic \
+-			-l gthread-2.0 \
+ 			-l z \
+ 			-l dl \
+ 			-l pthread
