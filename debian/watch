@@ -1,0 +1,3 @@
+version=3
+opts=filenamemangle=s/.+\/(?:v|nc)?(\d\S*)\.tar\.gz/namecoin-$1\.tar\.gz/, \
+  https://github.com/namecoin/namecoin/tags .*/(?:v|nc)?(\d\S*)\.tar\.gz
