@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Namecoin
+Comment=Namecoin P2P Cryptocurrency
+Exec=namecoin-qt %u
+Terminal=false
+Type=Application
+Icon=namecoin
+MimeType=x-scheme-handler/namecoin;
+Categories=Office;Finance;

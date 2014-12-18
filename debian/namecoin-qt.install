@@ -1,1 +1,6 @@
+#!/usr/bin/dh-exec
+
+src/qt/res/icons/bitcoin.png => usr/share/pixmaps/namecoin.png
+debian/namecoin-qt.desktop usr/share/applications
+debian/namecoin-qt.protocol usr/share/kde4/services/
 namecoin-qt usr/bin/

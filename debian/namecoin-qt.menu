@@ -1,0 +1,2 @@
+?package(namecoin-qt):needs="X11" section="Applications/Office"\
+  title="Namecoin P2P Cryptocurrency" command="/usr/bin/namecoin-qt"
