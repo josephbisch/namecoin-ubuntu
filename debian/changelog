@@ -1,5 +1,7 @@
-namecoin (0.3.76-0ubuntu1) UNRELEASED; urgency=low
+namecoin (0.3.76-0ubuntu1~vivid1) vivid; urgency=low
 
   * Initial release
+  * Patches
+    - Remove-glib
 
- -- Joseph Bisch <joseph.bisch@gmail.com>  Tue, 16 Dec 2014 15:03:07 +0000
+ -- Joseph Bisch <joseph.bisch@gmail.com>  Fri, 19 Dec 2014 00:32:27 +0000
