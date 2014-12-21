@@ -1,3 +1,7 @@
 *.debhelper
 *.debhelper.*
+files
+*.substvars
+namecoind/
+namecoin-qt/
 tmp/
