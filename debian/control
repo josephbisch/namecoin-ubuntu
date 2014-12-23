@@ -5,13 +5,13 @@ Maintainer: Joseph Bisch <joseph.bisch@gmail.com>
 Build-Depends: debhelper (>= 9),
                libssl-dev,
                libqt4-dev,
-               libboost-dev,
+               libboost-dev | libboost1.48-dev,
                libminiupnpc-dev,
                libdb++-dev,
-               libboost-program-options-dev,
-               libboost-filesystem-dev,
-               libboost-system-dev,
-               libboost-thread-dev,
+               libboost-program-options-dev | libboost-program-options1.48-dev,
+               libboost-filesystem-dev | libboost-program-options1.48-dev,
+               libboost-system-dev | libboost-system1.48-dev,
+               libboost-thread-dev | libboost-thread1.48-dev,
                dh-exec
 Standards-Version: 3.9.6
 Homepage: http://www.namecoin.info/
