@@ -1,0 +1,31 @@
+---
+name: "namecoin-ubuntu-linux"
+suites:
+- "precise"
+architectures:
+- "i386"
+- "amd64"
+packages:
+- "git-buildpackage"
+- "debhelper"
+- "libssl-dev"
+- "libqt4-dev"
+- "libminiupnpc-dev"
+- "libdb++-dev"
+- "libboost1.48-all-dev"
+- "dh-exec"
+reference_datetime: "2013-06-01 00:00:00"
+remotes:
+- "url": "https://github.com/josephbisch/namecoin-ubuntu.git"
+  "dir": "namecoin-ubuntu"
+files: []
+script: |
+  export LD_PRELOAD=/usr/lib/faketime/libfaketime.so.1
+  export FAKETIME=$REFERENCE_DATETIME
+  export TZ=UTC
+  export LIBRARY_PATH="$STAGING/lib"
+  
+  # use git-buildpackage, which will build the source and binary packages
+  # use -us -uc so we don't sign resulting package
+  cd namecoin-ubuntu
+  git-buildpackage --git-ignore-new -us -uc
