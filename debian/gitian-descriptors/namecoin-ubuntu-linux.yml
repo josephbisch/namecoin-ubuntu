@@ -14,6 +14,7 @@ packages:
 - "libdb++-dev"
 - "libboost1.48-all-dev"
 - "dh-exec"
+- "zip"
 reference_datetime: "2013-06-01 00:00:00"
 remotes:
 - "url": "https://github.com/josephbisch/namecoin-ubuntu.git"
